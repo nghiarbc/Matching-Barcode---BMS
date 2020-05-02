@@ -1,0 +1,25 @@
+﻿<Window x:Class="Matching_Barcode.Views.Alarm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Matching_Barcode.Views"
+        mc:Ignorable="d"
+        Title="Alarm" Height="300" Width="600" WindowStartupLocation="CenterScreen" WindowStyle="None" Background="#FFFB0606"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" Loaded="Window_Loaded"     
+      
+        >
+
+    <Grid>
+        <Label Content="Alarm code:" HorizontalAlignment="Left" Margin="59,5,0,0" VerticalAlignment="Top" Foreground="#DDFDC506" FontSize="36"/>
+        <Label x:Name="lbAlarmCode" Content="1000" HorizontalAlignment="Left" Margin="278,4,0,0" VerticalAlignment="Top" Foreground="#DDFDC506" FontSize="36"/>
+        <GroupBox Header="Nôi dung:" HorizontalAlignment="Left" Height="113" Margin="0,66,0,0" VerticalAlignment="Top" Width="592" Background="#FFEE0909" Foreground="#FFF7BF00">
+            <Label x:Name="lbAlarmNoidung" Content="Label" Height="81" Margin="0,-10" VerticalAlignment="Top" Width="582" Foreground="#DDFBD904" FontSize="18"/>
+        </GroupBox>
+        <GroupBox Header="Cách xử lý:" HorizontalAlignment="Left" Height="113" Margin="0,179,0,0" VerticalAlignment="Top" Width="592" Background="#FFF30101" Foreground="#FFF7C107">
+            <Label x:Name="lbAlarmXuly" Content="Label" Height="81" Margin="0,-10" VerticalAlignment="Top" Width="582" Foreground="#DDFBD904" FontSize="18"/>
+        </GroupBox>
+        <materialDesign:PackIcon x:Name="btnClose" Kind="CloseOctagon" Height="52" Width="69" Margin="523,0,0,0" MouseDown="btnClose_MouseDown" />
+        <Label Content="CLose" HorizontalAlignment="Left" Margin="538,41,0,0" VerticalAlignment="Top" Width="51" Foreground="#DDC5FD08"/>
+    </Grid>
+</Window>

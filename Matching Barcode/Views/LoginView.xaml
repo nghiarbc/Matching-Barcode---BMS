@@ -1,0 +1,47 @@
+﻿<Window x:Class="Matching_Barcode.Views.LoginView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Matching_Barcode.Views"
+        mc:Ignorable="d"
+        Title="Đăng nhập hệ thống matching barcode Cell and CP Code" Height="450" Width="505.5"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" WindowStartupLocation="CenterScreen" Background="#FF42DAA2" Foreground="#FFA60E0E" FontSize="16"    
+        >
+
+    <Grid Margin="0,0,2,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="31*"/>
+            <ColumnDefinition Width="15*"/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="16*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox            x:Name="txtID"
+            materialDesign:HintAssist.Hint="ID number"
+            materialDesign:HintAssist.HelperText="Nhập ID của bạn lên ô trên"
+            Margin="148,132,2,259" Grid.ColumnSpan="2">
+
+
+        </TextBox>
+        <TextBox            x:Name="txtUser"
+            materialDesign:HintAssist.Hint="Họ Và Tên"
+            materialDesign:HintAssist.HelperText="Nhập họ và tên sau đó ấn start chương trình"
+            Margin="148,192,2,199" Grid.ColumnSpan="2">
+
+        </TextBox>
+        <materialDesign:PackIcon Kind="RenameBox" Margin="116,204,0,0" />
+        <materialDesign:PackIcon Kind="KeyOutline" Margin="116,144,0,0" RenderTransformOrigin="1.344,0.75" />
+        <materialDesign:PackIcon Kind="UserCardDetails" Height="115" Width="115" Margin="179,10,0,0" Grid.ColumnSpan="2" />
+        <Grid
+            Width="124" Margin="122,0,2,0">
+            <Button
+                Style="{StaticResource MaterialDesignRaisedButton}"
+                materialDesign:ButtonProgressAssist.Value="-1"
+                materialDesign:ButtonProgressAssist.IsIndicatorVisible="True"
+                materialDesign:ButtonProgressAssist.IsIndeterminate="True"
+                Content="Bắt đầu"
+                Margin="0,254,-114,133" />
+        </Grid>
+
+    </Grid>
+</Window>
